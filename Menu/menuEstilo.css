@@ -4,6 +4,15 @@
     margin: 0;
 }
 
+.itemScroll{
+    padding-top: 8%;
+    background-repeat: no-repeat;
+    background-color: grey;
+    width: 100%;
+    height: 5vh;
+}
+
+
 body
 {
     /*background-image: url(https://krgames.com.br/medias/slide/big/13/img-2839-min.jpg);*/
@@ -12,16 +21,18 @@ body
 
 .linkClick
 {
-    padding-top: 15%;
+    padding-top: 40%;
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: xx-large;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+   justify-content: center;
     align-items: center;
     gap: 30vh;
-    color: whitesmoke
+    color: whitesmoke;
+    background-color: grey;
 }
 
 h2:hover
@@ -30,7 +41,7 @@ h2:hover
     color: rgb(71, 182, 71);
 }
 
-header
+.headMenu
 {
     display: flex;
     position: fixed;
@@ -69,7 +80,7 @@ header
     }
 }
 
-input
+.pesquisa
 {
     margin-top: 20px;
     border-radius: 20px;
@@ -81,7 +92,7 @@ input
     color: rgb(0, 0, 0)
 }
 
-.btn-group
+.btns
 {
     display: flex;
     gap: 50px;
