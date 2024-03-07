@@ -1,5 +1,3 @@
-var idGlob = "";
-
 function adicionarCarrinho(nome, preco)
 {
     /*
