@@ -98,7 +98,7 @@ header
     text-align: center;
     font-size: large;
     background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0)
+    color: rgb(0, 0, 0);
 }
 
 .links
@@ -122,4 +122,37 @@ h4:hover
 {
     cursor: pointer;
     color: rgb(16, 155, 16);
+}
+
+@media (width < 800px)
+{
+    .wrap-card
+    {
+        flex-direction: column;
+        margin-top: 15vh;
+    }
+
+    header
+    {
+        height: 25vh;
+        align-items: center;
+    }
+
+    .links
+    {
+        margin-top: 2vh;
+    }
+
+    .logo
+    {
+        margin-top: 2vh;
+        margin-left: 75vw;
+        width: 110px;
+        height: 110px;
+    }
+
+    .barraPesquisa
+    {
+        display: none;
+    }
 }

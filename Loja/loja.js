@@ -17,7 +17,8 @@ function adicionarCarrinho(nome, preco)
     alert(nome + " adicionado ao carrinho!");
 }
 
-function exibirItensNoCarrinho() {
+function exibirItensNoCarrinho() 
+{
     const carrinhoItens = JSON.parse(localStorage.getItem('carrinho')) || [];
     const carrinho = document.getElementById("listId");
     // Limpa o conteúdo atual do carrinho
@@ -25,22 +26,29 @@ function exibirItensNoCarrinho() {
     // Adiciona os itens do carrinho ao elemento 'carrinho'
     carrinhoItens.forEach(item => {
         const novoItem = document.createElement('li');
-        novoItem.textContent = `${item.nome} - ${item.preco}`;
+        novoItem.textContent = `${item.nome} - R$ ${item.preco},00`;
         carrinho.appendChild(novoItem);
-      });
+        });
 }  
 
-var teste = JSON.parse(localStorage.getItem("idGlob"));
-
-function mostrarCarrinho()
+function calcularTotal()
 {
-    exibirItensNoCarrinho();
-    
-    console.log(teste);
+    const carrinhoItens = JSON.parse(localStorage.getItem('carrinho')) || [];
+    const total = carrinhoItens.reduce((acc, item) => acc + item.preco, 0);
+    const totalElemento = document.getElementById('total');
+    totalElemento.textContent = `Preço final: R$ ${total},00`;
 }
 
+function limpar()
+{
+    let carrinhoItens = JSON.parse(localStorage.getItem('carrinho')) || [];
+    document.getElementById('listId').innerHTML = '';
+    document.getElementById('total').innerHTML = '';
+    localStorage.removeItem('carrinho');
+    carrinhoItens = null;
+}
 
-
+exibirItensNoCarrinho();
 
 
 
