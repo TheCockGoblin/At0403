@@ -8,6 +8,10 @@ body
 {
     /*background-image: url(https://krgames.com.br/medias/slide/big/13/img-2839-min.jpg);*/
     background-color: grey;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(37, 236, 37);
 }
 
 .wrap-card
@@ -20,6 +24,17 @@ body
     gap: 35px;
     margin-bottom: 6vh;
     margin-top: 6vh;
+}
+
+.categorias
+{
+    display: flex;
+    flex-direction: row;
+}
+
+h4 
+{
+    font-size: xx-large;
 }
 
 .card
@@ -134,7 +149,7 @@ h4:hover
 
     header
     {
-        height: 25vh;
+        height: 200px;
         align-items: center;
     }
 
