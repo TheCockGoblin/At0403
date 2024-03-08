@@ -22,15 +22,21 @@
         <h4 onclick="window.location.href='../Menu/menu.html'" type="button" class="btn btn-secondary">Menu</h4>
     </div>
 </header>
-<body>
+<body class="corpo">
     <h1>Seu carrinho: </h1>
     <br>
-    <ul class="listaCar" id="listId"> aa
+    <ul class="listaCar" id="listId">
         
     </ul>
-
-    <button onclick="mostrarCarrinho()">mostrar carrinho</button>
+    <br>
+    <p><span class="total" id="total"></span></p>
+    <br>
+    <div class="btns">
+        <button class="btn btn-outline-success" onclick="limpar()">Limpar Carrinho</button>
+        <button class="btn btn-outline-success" onclick="calcularTotal()">Calcular Total</button>
+    </div>
     
 </body>
 <script src="../Loja/loja.js"></script>
 </html>
+
