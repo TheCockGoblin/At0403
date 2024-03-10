@@ -58,7 +58,7 @@ h2
     width: 125px;
     background-color: black;
     margin-right: 65vw;
-    margin-top: -50px;
+    margin-top: 10px;
     border: 1px solid green;
     border-radius: 100%;
     opacity: 0.9;
@@ -126,6 +126,11 @@ h4:hover
     display: none;
 }
 
+.pesquisa
+{
+    display: none;
+}
+
 @media (width < 800px)
 {
     .logoCorpo
@@ -159,6 +164,7 @@ h4:hover
 
     .logo
     {
+        margin-left: 70vw;
         margin-top: 2vh;
         width: 110px;
         height: 110px;
@@ -173,6 +179,11 @@ h4:hover
     .linkClick
     {
         display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+        color: rgb(148, 235, 148);
+        text-align: center;
     }
 
 
@@ -196,4 +207,10 @@ h4:hover
     {
         display: none;
     }
+
+    h1
+    {
+        color: white;
+    }
+
 }

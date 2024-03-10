@@ -52,6 +52,11 @@ h4
     font-family: "Rubik", sans-serif;
 }
 
+.card img
+{
+    object-fit: cover;
+}
+
 a
 {
     background-color: green;
@@ -91,7 +96,7 @@ header
     width: 125px;
     background-color: black;
     margin-right: 70%;
-    margin-top: -50px;
+    margin-top: 10px;
     border: 1px solid green;
     border-radius: 100%;
     opacity: 0.9;
@@ -141,6 +146,11 @@ h4:hover
 {
     cursor: pointer;
     color: rgb(16, 155, 16);
+}
+
+.barraPesquisa
+{
+    display: none;
 }
 
 @media (width < 800px)

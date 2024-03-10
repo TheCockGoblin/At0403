@@ -62,7 +62,7 @@ header
     width: 125px;
     background-color: black;
     margin-right: 70%;
-    margin-top: -50px;
+    margin-top: 10px;
     border: 1px solid green;
     border-radius: 100%;
     opacity: 0.9;
@@ -161,6 +161,11 @@ button
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.barraPesquisa
+{
+    display: none;
 }
 
 @media (width < 800px)
