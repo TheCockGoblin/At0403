@@ -21,9 +21,7 @@ function exibirItensNoCarrinho()
 {
     const carrinhoItens = JSON.parse(localStorage.getItem('carrinho')) || [];
     const carrinho = document.getElementById("listId");
-    // Limpa o conteúdo atual do carrinho
     carrinho.innerHTML = '';
-    // Adiciona os itens do carrinho ao elemento 'carrinho'
     carrinhoItens.forEach(item => {
         const novoItem = document.createElement('li');
         novoItem.textContent = `${item.nome} - R$ ${item.preco},00`;
