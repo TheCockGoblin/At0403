@@ -16,7 +16,10 @@
 
 .corpo
 {
-    /*background-image: url(https://krgames.com.br/medias/slide/big/13/img-2839-min.jpg);*/
+    background-image: url(https://atacadogames.com/javax.faces.resource/loja/01-loja-atacado-games.jpg.xhtml?ln=imagens&rv=1.1.1.1.1.1.1.1.1.1.56.4);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
     background-color: grey;
 }
 
@@ -33,7 +36,6 @@ h2
     align-items: center;
     gap: 30vh;
     color: whitesmoke;
-    background-color: grey;
 }
 
 .headMenu
@@ -211,6 +213,11 @@ h4:hover
     h1
     {
         color: white;
+    }
+
+    .corpo
+    {
+        background-image: none;
     }
 
 }
