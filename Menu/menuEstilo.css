@@ -131,7 +131,7 @@ h4:hover
     display: none;
 }
 
-@media (width < 800px)
+@media (width < 1000px)
 {
     .logoCorpo
     {
